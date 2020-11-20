@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bfloader demo</title>
+  </head>
+  <body>
+    <h1>bfloader</h1>
+    <p class="portfolio">
+      <a href="https://matsz.dev/">Check out my portfolio!</a>
+    </p>
+    <div id="loading" class="loading">Loading... (this may take a while)</div>
+    <h2>Demo:</h2>
+    <div id="screen_container">
+      <div
+        style="white-space: pre; font: 14px monospace; line-height: 14px"
+      ></div>
+      <canvas style="display: none"></canvas>
+    </div>
+    <p>
+      After running, type in your Brainfuck program using your keyboard (use
+      arrow keys to move the cursor) and press <kbd>F5</kbd> to execute it (or
+      <kbd>Ctrl</kbd> + <kbd>F5</kbd> to start step by step execution). The
+      output will be shown in the lower half of your screen.
+    </p>
+    <p>
+      To stop the execution hold <kbd>Ctrl</kbd> + <kbd>C</kbd>. While debugging
+      press <kbd>F5</kbd> to continue the program from the current step until
+      the end.
+    </p>
+    <h2>Credits:</h2>
+    <p>
+      x86 JavaScript VM from <a href="https://github.com/copy/v86">v86</a> (by
+      <a href="https://github.com/copy">@copy</a>).
+    </p>
+    <p>
+      <a href="https://github.com/mat-sz/bfloader">bfloader</a> (Brainfuck IDE
+      and interpreter that fits entirely in a boot sector (512 bytes)) by me.
+    </p>
+  </body>
+</html>
