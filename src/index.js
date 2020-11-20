@@ -23,7 +23,5 @@ let emulator = new V86Starter({
 });
 
 emulator.add_listener("screen-set-mode", (graphic) => {
-  if (graphic) {
-    loading.style.display = "none";
-  }
+  loading.style.display = "none";
 });
