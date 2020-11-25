@@ -38,3 +38,7 @@ p,
 ul {
   max-width: 600px;
 }
+
+span[style*="color: rgb(170, 170, 255)"] {
+  color: white !important;
+}
