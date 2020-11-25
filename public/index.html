@@ -27,15 +27,32 @@
     </p>
     <p>
       After running, type in your Brainfuck program using your keyboard (use
-      arrow keys to move the cursor) and press <kbd>F5</kbd> to execute it (or
-      <kbd>Ctrl</kbd> + <kbd>F5</kbd> to start step by step execution). The
-      output will be shown in the lower half of your screen.
+      arrow keys and Home/End keys to move the cursor) and press
+      <kbd>F5</kbd> to execute it (or <kbd>Ctrl</kbd> + <kbd>F5</kbd> to start
+      step by step execution). The output will be shown in between the separator
+      and the blue line.
     </p>
     <p>
       To stop the execution or to reset after completed execution hold
       <kbd>Ctrl</kbd> + <kbd>C</kbd>. While debugging press <kbd>F5</kbd> to
       continue the program from the current step until the end.
     </p>
+    <h2>Limitations:</h2>
+    <ul>
+      <li>
+        Program length is limited to 21 lines of 80 columns each (1680
+        characters).
+      </li>
+      <li>Each cell is 1 byte long. (256 different values, wrapping).</li>
+      <li>
+        Program memory space starts at 0xF000. It is possible to overwrite
+        memory segments that shouldn't be overwritten.
+      </li>
+      <li>
+        Program's output is limited to 1 line of 80 columns (80 characters).
+      </li>
+      <li>The editor isn't very advanced.</li>
+    </ul>
     <h2>Credits:</h2>
     <p>
       x86 JavaScript VM from <a href="https://github.com/copy/v86">v86</a> (by
