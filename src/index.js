@@ -1,5 +1,4 @@
-import { V86Starter } from "v86";
-
+import "./libv86";
 import "./App.scss";
 
 import seabios from "./bios/seabios.bin";
@@ -9,7 +8,7 @@ import bfloader from "./img/bfloader.img";
 const loading = document.getElementById("loading");
 const helloWorld = document.getElementById("hello_world");
 
-const emulator = new V86Starter({
+const emulator = new window.V86Starter({
   screen_container: document.getElementById("screen_container"),
   bios: {
     url: seabios,
